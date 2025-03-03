@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5/dist/css/bootstrap.min.css">
+  <title>Fresh Laundry</title>
+  
+</head>
+<body>
+ <p class="HH">Upto 50% OFF on Select Services!</p>
+  <div class="searchContainer">
+    <form onsubmit="return false;">
+      <input type="text" id="search-input" placeholder="Search by Services" class="input">
+      <button type="button" class="button" onclick="searchServices()">
+        <i class="fa fa-search" aria-hidden="true"></i>
+      </button>
+    </form>
+
+    <div class="flex-container" id="services-container">
+      <a href="laundry.html" class="service-card">
+        <div class="flex-box">
+          <img src="images/laundry.png" alt="Laundry">
+          <p>Laundry</p>
+        </div>
+      </a>
+      
+      <a href="dry-cleaning.html" class="service-card">
+        <div class="flex-box">
+          <img src="images/dry-cleaning.png" alt="Dry Clean">
+          <p>Dry Clean</p>
+        </div>
+      </a>
+      
+      <a href="upholstery.html" class="service-card">
+        <div class="flex-box">
+          <img src="images/cleaner.png" alt="Upholstery">
+          <p>Upholstery</p>
+        </div>
+      </a>
+      
+      <a href="steam-ironing.html" class="service-card">
+        <div class="flex-box">
+          <img src="images/steam-iron.png" alt="Steam Ironing">
+          <p>Steam Ironing</p>
+        </div>
+      </a>
+      
+      <a href="home-cleaning.html" class="service-card">
+        <div class="flex-box">
+          <img src="images/house-cleaning.png" alt="Home Cleaning">
+          <p>Home Cleaning</p>
+        </div>
+      </a>
+      
+      <a href="products.html" class="service-card">
+        <div class="flex-box">
+          <img src="images/Products.png" alt="Products Store">
+          <p>Products Store</p>
+        </div>
+      </a>
+    </div>
+    
+    <p id="no-results" style="display: none; color: red; text-align: center;">No results found</p>
+
+    <p style="color: rgb(14, 14, 20); font-size: 35px; margin-top:50px">Hot Deals</p>
+  </div>
+
+  <!-- Image Carousel -->
+  <div class="carousel-container">
+   <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+     <div class="carousel-indicators">
+       <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+       <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+       <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+     </div>
+
+     <div class="carousel-inner">
+       <div class="carousel-item active">
+         <img src="images/img01.jpg" class="d-block w-100" alt="Deal 1">
+       </div>
+       <div class="carousel-item">
+         <img src="images/img02.png" class="d-block w-100" alt="Deal 2">
+       </div>
+       <div class="carousel-item">
+         <img src="images/img03.jpg" class="d-block w-100" alt="Deal 3">
+       </div>
+       
+     </div>
+   </div>
+ </div> 
+
+ 
+ 
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5/dist/js/bootstrap.bundle.min.js"></script>
+ <script src="script.js" defer></script>
+</body>
+</html>
